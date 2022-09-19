@@ -13,8 +13,8 @@ with zipfile.ZipFile('main.zip', 'r') as zip_ref:
 ans = []
 for cur_dir, dirs, files in os.walk('main'):
     for i in range(len(files)):
-        if '.py' in files[i]:
+        if '.py' in files[i][-3:] and cur_dir not in ans:
             ans.append(cur_dir)
 
-with open("text3.txt", "w") as txt:
-    write_array(ans, txt)
+with open("text4.txt", "w") as txt:
+    write_array(sorted(ans), txt)
