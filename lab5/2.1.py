@@ -42,9 +42,10 @@ class rectangle(shape):
         self.area = self.height * self.width
 
 
-tr = triangle(int(input()), int(input()))
-tr.set_area()
-print(tr.get_area())
-rc = rectangle(int(input()), int(input()))
-rc.set_area()
-print(rc.get_area())
+if __name__ == "__main__":  
+    tr = triangle(int(input()), int(input()))
+    tr.set_area()
+    print(tr.get_area())
+    rc = rectangle(int(input()), int(input()))
+    rc.set_area()
+    print(rc.get_area())
