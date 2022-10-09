@@ -52,25 +52,25 @@ class Bird(Animal, Flyer):
         self.wings = [FeatheredWings() for _ in range(2)]
 
 
-class Bat(Animal, WebWings):
+class Bat(Animal, Flyer):
     def __init__(self, name, age):
         super().__init__(name, age)
         self.wings = [WebWings() for _ in range(2)]
 
 
 
-class Fly(Insect, WebWings):
+class Fly(Insect, Flyer):
     def __init__(self, name, age):
         super().__init__(name, age)
         self.wings = [WebWings() for _ in range(2)]
 
 
-class ColoradoBug(Insect, WebWings):
+class ColoradoBug(Insect, Flyer):
     def __init__(self, name, age):
         super().__init__(name, age)
         self.wings = [WebWings() for _ in range(2)]
 
-class OctaWingedHorror(Insect, WebWings):
+class OctaWingedHorror(Insect, Flyer):
     def __init__(self, name, age):
         super().__init__(name, age)
         self.wings = [WebWings() for _ in range(8)]
