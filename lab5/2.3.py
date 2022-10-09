@@ -16,22 +16,22 @@ class Animal():
     def get_spec(self):
         return self.spec
 
-
-class Zebra(Animal):
     def set_spec(self, spec):
         self.spec = spec
     
     def set_info(self):
         self.info.append(self.spec)
 
+
+class Zebra(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
 
 
 class Dolphin(Animal):
-    def set_spec(self, spec):
-        self.spec = spec
-    
-    def set_info(self):
-        self.info.append(self.spec)
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
 
 
 if __name__ == "__main__":
