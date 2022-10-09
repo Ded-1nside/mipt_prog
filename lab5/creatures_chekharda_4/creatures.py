@@ -25,6 +25,8 @@ class Insect(Animal):
 
 
 class Zebra(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
     def set_spec(self, spec):
         self.spec = spec
     
@@ -34,6 +36,8 @@ class Zebra(Animal):
 
 
 class Dolphin(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
     def set_spec(self, spec):
         self.spec = spec
     
