@@ -23,3 +23,16 @@ class Vector():
     @classmethod
     def vect_inp(cls, string):
         return cls(*string.split(','))
+
+        
+#this part solves third issue
+n = int(input())
+x = 0
+y = 0
+z = 0
+for i in range(n):
+    cur_vector = Vector(input())
+    x += cur_vector.x
+    y += cur_vector.y
+    z += cur_vector.z
+print (x/n, y/n, z/n)
