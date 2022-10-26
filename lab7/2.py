@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import pygame
-import random
+import random as rd
 import math
 
 SCREEN_DIM = (800, 600)
@@ -165,7 +165,7 @@ if __name__ == "__main__":
                     line.steps -= 1 if line.steps > 1 else 0
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                line.add_pt(Vec2d(event.pos[0], event.pos[1]), Vec2d(random.random))
+                line.add_pt(Vec2d(event.pos[0], event.pos[1]), Vec2d(rd.random() * 2, rd.random() * 2))
 
         gameDisplay.fill((0, 0, 0))
         hue = (hue + 1) % 360
